@@ -65,6 +65,7 @@ function Feedback({ data }) {
         <div className="feedback-main__subtitle">Phản hồi từ khách hàng</div>
         <div className="feedback-main__cards">
           <Carousel
+           transitionDuration={200}
             showDots
             customDot={<CustomDot />}
             responsive={responsive}
