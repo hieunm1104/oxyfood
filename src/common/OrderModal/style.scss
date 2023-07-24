@@ -1,0 +1,293 @@
+.modal-affi-wrap {
+    .ant-modal {
+        width: auto !important;
+    }
+}
+.ant-modal {
+    color: white;
+    .ant-modal-content {
+        border-radius: 40px;
+        background: var(--c-1, #e2e0d9);
+        width: 1000px;
+        margin: 0 auto;
+        padding: 0px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
+        .modal-affi {
+            padding: 60px 38px;
+            display: flex;
+            gap: 37px;
+            flex-direction: column;
+            @media (max-width: 768px) {
+                padding: 70px 15px 20px;
+            }
+
+            .line {
+                height: 2px;
+                background-color: #434343;
+            }
+            .group-title{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .title {
+                    color: #fff;
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    display: flex;
+                    padding: 12px 20px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    background: var(--pri-1, #d40606);
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
+                }
+                .subtitle {
+                    color: var(--pri-2, #2f2f2f);
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-size: 64px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    @media screen and (max-width: 768px) {
+                        font-size: 48px;
+                    }
+                }
+            }
+            .form {
+                padding: 32px;
+                border-radius: 16px;
+                border: 1px solid var(--pri-2, #2f2f2f);
+                background: var(--c-1, #e2e0d9);
+                box-shadow: -4px 4px 30px 0px rgba(0, 0, 0, 0.25);
+                display: flex;
+                flex-direction: column;
+                @media screen and (max-width: 768px) {
+                    padding: 20px;
+                }
+                gap: 12px;
+                .input,
+                .inputnumber,
+                .inputnumber-select {
+                    border: none;
+                    outline: none;
+                    padding: 12px 20px;
+                    border-radius: 12px;
+                    border: 1px solid var(--pri-2, #2f2f2f);
+                    width: 100%;
+                    background-color: #e2e0d9;
+                }
+                .ant-input::placeholder,
+                .ant-input-number-input::placeholder {
+                    color: #616161;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                .ant-input-number-input {
+                    padding: 0px;
+                }
+                .group-text {
+                    display: flex;
+                    justify-content: space-between;
+                    .add {
+                        color: #ca6101;
+                        font-family: Montserrat;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                    .delete {
+                        color: var(--pri-1, #d40606);
+                        text-align: center;
+                        font-family: Montserrat;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                }
+                .button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .btn-buy {
+                        margin: 32px 0px;
+                        padding: 12px 20px;
+                        border-radius: 12px;
+                        background: var(--pri-1, #d40606);
+                        border: none;
+                        outline: none;
+                        height: 50px;
+                        color: #fff;
+                        text-align: center;
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 24px; /* 150% */
+                        letter-spacing: 0.5px;
+                        transition: all 0.35s ease-in-out;
+                        &:hover {
+                            color: #fff !important;
+                            transform: scale(1.1);
+                        }
+                        span:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+                .group-select {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    gap: 12px;
+                    .select {
+                        padding: 12px 20px;
+                        width: 100% !important;
+                        border-radius: 12px;
+                        border: 1px solid var(--pri-2, #2f2f2f);
+                        .ant-select-selector {
+                            background: #e2e0d9 !important;
+                            border: none;
+                            outline: none;
+                            padding: 0px;
+                            &::selection {
+                                border: none;
+                            }
+                        }
+                        .ant-select-selection-item {
+                            color: var(--pri-2, #2f2f2f);
+                            /* text-align: center; */
+                            font-family: Montserrat;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            padding: 0px;
+                            line-height: normal;
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+
+                    .inputnumber-select {
+                        width: 15%;
+                        display: flex;
+                        align-items: center;
+                        @media screen and (max-width: 768px) {
+                            width: 40%;
+                        }
+                    }
+                    .ant-input-number-input::placeholder {
+                        color: #616161;
+                        font-family: Montserrat;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        text-align: center;
+                    }
+                }
+                .desc {
+                    color: #000;
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: italic;
+                    font-weight: 500;
+                    line-height: 24px; /* 150% */
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+        .ant-tabs-nav-wrap {
+            background: #2b2b2b;
+            border-bottom: 1px solid #434343;
+            .ant-tabs-ink-bar {
+                background-color: #fd5329 !important;
+            }
+            .ant-tabs-tab-btn {
+                font-family: "Lato";
+                font-style: normal;
+                font-weight: 800;
+                font-size: 18px;
+                line-height: 22px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #ffffff;
+                padding: 15px;
+            }
+
+            .ant-tabs-nav-list {
+                width: 100%;
+            }
+            .ant-tabs-tab-active .ant-tabs-tab-btn {
+                color: #fd5329;
+                background-color: #434343;
+                width: 100%;
+                justify-content: center;
+            }
+            .ant-tabs-tab {
+                padding: 0px;
+                width: 50%;
+                justify-content: center;
+            }
+            .ant-tabs-tab .ant-tabs-tab-active {
+                background-color: #434343;
+            }
+        }
+        #rc-tabs-1-panel-1 {
+            padding: 0px 20px;
+        }
+        #rc-tabs-1-panel-2 {
+            padding: 0px 20px;
+        }
+        .ant-input-number-input {
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            display: flex;
+            align-items: center;
+            color: #979797;
+        }
+        .ant-modal-footer {
+            display: none;
+        }
+        .ant-modal-close {
+            width: 40px;
+            &:hover {
+                background-color: transparent;
+            }
+            .ant-modal-close-x {
+                font-size: 20px;
+                border-radius: 50%;
+                padding: 10px 10px;
+                background: #434343;
+                color: #2b2b2b;
+                display: flex;
+                align-items: center;
+
+                justify-content: center;
+                &:hover {
+                    color: #fd5329;
+                }
+            }
+        }
+    }
+}

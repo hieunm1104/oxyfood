@@ -1,0 +1,40 @@
+.sales {
+    background: var(--pri-2, #2f2f2f);
+    gap: 36px;
+    &-main {
+        max-width: 1600px;
+        margin: 0 auto;
+        display: flex;
+        padding: 100px;
+        justify-content: space-between;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            gap: 36px;
+            padding: 80px 25px;
+         }
+            &__box {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 8px;
+            &--title {
+                color: #fff;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+            &--desc {
+                color: #fff;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+}

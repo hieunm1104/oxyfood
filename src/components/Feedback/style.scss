@@ -1,0 +1,111 @@
+.feedback {
+    padding: 100px 0px;
+    &-main {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &__title {
+            color: #fff;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding: 12px 20px;
+            background: var(--pri-1, #d40606);
+            @media screen and (max-width: 768px) {
+                font-size: 20px;
+             }
+        }
+        &__subtitle {
+            color: var(--pri-2, #2f2f2f);
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            @media screen and (max-width: 768px) {
+                font-size: 48px;
+            }
+        }
+        &__cards {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            width: 100%;
+            padding: 80px;
+            @media screen and (max-width: 768px) {
+               padding: 48px;
+               flex-direction: column;
+            }
+            .carousel-custom{
+                width: 100%;
+            }
+            .react-multi-carousel-track{
+                gap: 24px;
+                @media screen and (max-width: 768px) {
+                    gap: 0px;
+                }
+            }
+
+            .react-multi-carousel-dot-list{
+                display: flex;
+                gap: 6px;
+            }
+            &--card {
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                border-radius: 16px;
+                border: 1px solid var(--pri-2, #2f2f2f);
+                justify-content: space-between;
+                flex: 1 0 0;
+                align-self: stretch;
+                .line {
+                    height: 2px;
+                    width: 160px;
+                    background-color: #2f2f2f;
+                    margin: 16px 0px;
+                }
+                .name {
+                    color: var(--pri-2, #2f2f2f);
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                .feedbacks {
+                    color: var(--pri-2, #2f2f2f);
+                    text-align: left;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    margin: 16px 0px;
+                    height: 100px;
+                }
+                .confirm {
+                    color: var(--pri-2, #2f2f2f);
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-style: italic;
+                    font-weight: 500;
+                    line-height: normal;
+                    border-radius: 12px;
+                    border: 1px solid #000;
+                    padding: 12px;
+                }
+            }
+        }
+    }
+}

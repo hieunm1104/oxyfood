@@ -1,0 +1,17 @@
+.card-item{
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    .carousel-custom{
+        width: 100%;
+    }
+    .react-multi-carousel-track{
+        gap: 24px;
+        @media screen and (max-width: 768px) {
+            gap: 0px;
+        }
+    }
+    .react-multi-carousel-dot-list{
+        display: none;
+    }
+}
