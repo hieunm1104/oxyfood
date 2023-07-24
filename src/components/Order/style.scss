@@ -11,7 +11,7 @@
         top: 0;
         right: 0;
         // right: 0;
-        filter: drop-shadow(0px -5px 50px rgba(0, 0, 0, 0.40));
+        mix-blend-mode: multiply;
         @media screen and (max-width:768px) {
             height: 43%;
         }
@@ -20,8 +20,9 @@
         position: absolute;
         // top: 0;
         bottom: 0;
-        left: 10%;
+        left: 0;
         // right: 0;
+        mix-blend-mode: multiply;
         @media screen and (max-width:768px) {
             height: 43%;
         }

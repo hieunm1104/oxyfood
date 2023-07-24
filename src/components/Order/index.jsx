@@ -10,8 +10,8 @@ function Order(props) {
 
   return (
     <div className="order">
-      {/* <img src="/images/ot.png" alt="" className="img-ot"/>
-      <img src="/images/hoa.png" alt="" className="img-hoa"/> */}
+      <img src="/images/ot.png" alt="" className="img-ot"/>
+      <img src="/images/hoa.png" alt="" className="img-hoa"/>
       <div className="order-main">
         <div className="order-main__group-title">
           <div className="order-main__group-title--title">
