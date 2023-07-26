@@ -82,12 +82,12 @@ function Features(props) {
              </div>
              <div className="right">
                 <div className="right-top">
-                <div className="title">Khach hang lam anh dung</div>
-                <div className="phone"> 0937713582</div>
-                <div className="desc">san pham muoi ot </div>
+                <div className="title">Khách hàng Lâm Anh Dũng</div>
+                <div className="phone"> SĐT: 098.xxx.x21</div>
+                <div className="desc">Đã đặt mua sản phẩm muối ớt đỏ Oxy </div>
                 </div>
                 <div className="right-bottom">
-                  <div className="price">199.000VNĐ</div>
+                  <div className="pricee">199.000VNĐ</div>
                 </div>
              </div>
               </div>
