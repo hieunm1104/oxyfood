@@ -21,7 +21,7 @@ function Features(props) {
         setActive(true);
       }
     }
-      , 2000);
+      , 5000);
     return () => clearInterval(interval);
 
   }, [])
@@ -31,7 +31,7 @@ function Features(props) {
     if (showMessage) {
       timeout = setTimeout(() => {
         setActive(false);
-      }, 1000);
+      }, 3000);
     }
     return () => clearTimeout(timeout);
   }, [showMessage])
