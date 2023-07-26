@@ -9,7 +9,7 @@ import Feedback from "components/Feedback";
 import Order from "components/Order";
 import Footer from "components/Footer";
 import "react-multi-carousel/lib/styles.css";
-
+import 'react-notifications/lib/notifications.css';
 let list_item = [
   {
     name: "Muối Ớt Xanh Oxy",
