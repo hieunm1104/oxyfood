@@ -77,7 +77,7 @@ function CardItem({ data }) {
               {item.name}
             </div>
             <div className="images">
-              <img src={item.image} alt="" />
+              <img src={item.image} alt="" className="img-main"/>
               <div className="sale-off">
                 <img src="/images/sale-off.png" alt="" />
                 <div>
